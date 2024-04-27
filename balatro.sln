@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balatro.Common", "Balatro.Common\Balatro.Common.csproj", "{849D5862-0931-4356-A115-6FC872897DAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balatro.Common.Tests", "Balatro.Common.Tests\Balatro.Common.Tests.csproj", "{FFAAEFBE-E9BE-46D1-B67D-890DDD0EC765}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{849D5862-0931-4356-A115-6FC872897DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{849D5862-0931-4356-A115-6FC872897DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{849D5862-0931-4356-A115-6FC872897DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{849D5862-0931-4356-A115-6FC872897DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFAAEFBE-E9BE-46D1-B67D-890DDD0EC765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFAAEFBE-E9BE-46D1-B67D-890DDD0EC765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFAAEFBE-E9BE-46D1-B67D-890DDD0EC765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFAAEFBE-E9BE-46D1-B67D-890DDD0EC765}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
