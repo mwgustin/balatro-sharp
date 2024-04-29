@@ -8,11 +8,11 @@ public class UnitTest1
         //arrange
         var state = new GameState();
         state.PlayedCards.AddRange([
-            new Card() { ChipValue = 5 },
-            new Card() { ChipValue = 6 },
-            new Card() { ChipValue = 7 },
-            new Card() { ChipValue = 8 },
-            new Card() { ChipValue = 9 }
+            new PlayingCard(Rank.Five, Suit.Heart),
+            new PlayingCard(Rank.Six, Suit.Heart),
+            new PlayingCard(Rank.Seven, Suit.Heart),
+            new PlayingCard(Rank.Eight, Suit.Heart),
+            new PlayingCard(Rank.Nine, Suit.Heart),
         ]);
         //act
         var result = state.RunHand();
@@ -25,13 +25,13 @@ public class UnitTest1
         //arrange
         var state = new GameState();
         state.PlayedCards.AddRange([
-            new Card() { ChipValue = 5 },
-            new Card() { ChipValue = 6 },
-            new Card() { ChipValue = 7 },
-            new Card() { ChipValue = 8 },
-            new Card() { ChipValue = 9 }
+            new PlayingCard(Rank.Five, Suit.Heart),
+            new PlayingCard(Rank.Six, Suit.Heart),
+            new PlayingCard(Rank.Seven, Suit.Heart),
+            new PlayingCard(Rank.Eight, Suit.Heart),
+            new PlayingCard(Rank.Nine, Suit.Heart),
         ]);
-        state.Jokers.Add(new Test5Joker());
+        state.Jokers.Add(new Joker5());
         //act
         var result = state.RunHand();
         //assert
@@ -43,14 +43,14 @@ public class UnitTest1
         //arrange
         var state = new GameState();
         state.PlayedCards.AddRange([
-            new Card() { ChipValue = 5 },
-            new Card() { ChipValue = 6 },
-            new Card() { ChipValue = 7 },
-            new Card() { ChipValue = 8 },
-            new Card() { ChipValue = 9 }
+            new PlayingCard(Rank.Five, Suit.Heart),
+            new PlayingCard(Rank.Six, Suit.Heart),
+            new PlayingCard(Rank.Seven, Suit.Heart),
+            new PlayingCard(Rank.Eight, Suit.Heart),
+            new PlayingCard(Rank.Nine, Suit.Heart),
         ]);
-        state.Jokers.Add(new Test5Joker());
-        state.Jokers.Add(new Testx5Joker());
+        state.Jokers.Add(new Joker5());
+        state.Jokers.Add(new JokerX5());
         //act
         var result = state.RunHand();
         //assertb
@@ -62,14 +62,14 @@ public class UnitTest1
         //arrange
         var state = new GameState();
         state.PlayedCards.AddRange([
-            new Card() { ChipValue = 5 },
-            new Card() { ChipValue = 6 },
-            new Card() { ChipValue = 7 },
-            new Card() { ChipValue = 8 },
-            new Card() { ChipValue = 9 }
+            new PlayingCard(Rank.Five, Suit.Heart),
+            new PlayingCard(Rank.Six, Suit.Heart),
+            new PlayingCard(Rank.Seven, Suit.Heart),
+            new PlayingCard(Rank.Eight, Suit.Heart),
+            new PlayingCard(Rank.Nine, Suit.Heart),
         ]);
-        state.Jokers.Add(new Testx5Joker());
-        state.Jokers.Add(new Test5Joker());
+        state.Jokers.Add(new JokerX5());
+        state.Jokers.Add(new Joker5());
         //act
         var result = state.RunHand();
         //assert
@@ -82,15 +82,15 @@ public class UnitTest1
         //arrange
         var state = new GameState();
         state.PlayedCards.AddRange([
-            new Card() { ChipValue = 5 },
-            new Card() { ChipValue = 6 },
-            new Card() { ChipValue = 7 },
-            new Card() { ChipValue = 8 },
-            new Card() { ChipValue = 9 }
+            new PlayingCard(Rank.Five, Suit.Heart),
+            new PlayingCard(Rank.Six, Suit.Heart),
+            new PlayingCard(Rank.Seven, Suit.Heart),
+            new PlayingCard(Rank.Eight, Suit.Heart),
+            new PlayingCard(Rank.Nine, Suit.Heart),
         ]);
-        state.Jokers.Add(new Testx5Joker());
-        state.Jokers.Add(new Test5Joker());
-        state.Jokers.Add(new TestReplayJoker());
+        state.Jokers.Add(new JokerX5());
+        state.Jokers.Add(new Joker5());
+        state.Jokers.Add(new ReplayJoker());
         //act
         var result = state.RunHand();
         //assert
@@ -103,13 +103,13 @@ public class UnitTest1
         //arrange
         var state = new GameState();
         state.PlayedCards.AddRange([
-            new Card() { ChipValue = 5 },
-            new Card() { ChipValue = 6 },
-            new Card() { ChipValue = 7 },
-            new Card() { ChipValue = 8 },
-            new Card() { ChipValue = 9 }
+            new PlayingCard(Rank.Five, Suit.Heart),
+            new PlayingCard(Rank.Six, Suit.Heart),
+            new PlayingCard(Rank.Seven, Suit.Heart),
+            new PlayingCard(Rank.Eight, Suit.Heart),
+            new PlayingCard(Rank.Nine, Suit.Heart),
         ]);
-        state.Jokers.Add(new TestReplayJoker());
+        state.Jokers.Add(new ReplayJoker());
         //act
         var result = state.RunHand();
         //assert

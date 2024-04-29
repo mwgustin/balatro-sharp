@@ -1,0 +1,8 @@
+﻿{
+  CurrentScore: {
+    Chips: 100.0,
+    Mult: 50.0
+  },
+  Round: 1,
+  Ante: 1
+}
